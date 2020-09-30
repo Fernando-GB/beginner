@@ -1,0 +1,14 @@
+import java.until.Scanner;
+
+public class Name {
+  public static void main (String [] args) {
+    String name = "";
+    Scanner ReadKeyboard = new scanner(System.in);
+    
+    System.out.println("Welcome to the Program");
+    System.out.print("What is your name?: ");
+    name = ReadKeyboard.nextLine();
+    System.out.println("Hello" + name + " !!");
+    
+  }
+}
