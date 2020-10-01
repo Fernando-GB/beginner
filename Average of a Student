@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Avarage {
+	public static void main (String [] args) {
+		String name = "";
+		float n1 = 0;
+		float n2 = 0;
+		float n3 = 0;
+		float n4 = 0;
+		double total = 0;
+		double average = 0;
+		Scanner ReadKeyboard = new Scanner(System.in);
+		System.out.println("Calculate the math average");
+		System.out.print("");
+		System.out.print("What is your name: ");
+		name = ReadKeyboard.nextLine();
+		
+		System.out.print("Inform the student's 1 grade: ");
+		n1 = ReadKeyboard.nextFloat();
+		
+		System.out.print("Inform the student's 2 grade: ");
+		n2 = ReadKeyboard.nextFloat();
+		
+		System.out.print("Inform the student's 3 grade: ");
+		n3 = ReadKeyboard.nextFloat();
+		
+		System.out.print("Inform the student's 4 grade: ");
+		n4 = ReadKeyboard.nextFloat();
+		
+		total = n1+n2+n3+n4;
+		average = total/4;
+		
+		System.out.println(name+" your grade is " + average);
+		
+	}
+}
